@@ -33,7 +33,10 @@ class ExamController extends Controller
     	} else if($request->question4) {
     		$input_value = $request->input_value4;
     		return $this->stringLeastMost($input_value);
-    	}
+    	} else if($request->question5) {
+
+            return $this->stockBuySell();
+        }
 
     	
     }
@@ -129,4 +132,16 @@ class ExamController extends Controller
 	    echo "Least:" . join(", ",$lowest_str). ' the answer is '. $s;
 
 	}
+
+    public function stockBuySell() 
+    { 
+        $data = [100, 80, 50, 145, 500, 400, 450, 300, 10, 55, 40, 15, 80, 90];
+        $max = 0;
+        foreach ($data as $key => $value) {
+           $max = max($data);
+           echo 'BUY '.' SELL '.$max;
+        }
+        //not yet done, :(
+        return; 
+    }
 }

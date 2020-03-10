@@ -65,48 +65,69 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-           
-
+        
             <div class="content">
                 <form class="form-horizontal" method="post" id="exam" >
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     
                     <div class="row">
-                        <table>
-                            <tr>
-                                <td>
-                                    <input type="text" class="form-control input-value" name="input_value" value="">
-                                    <br>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary question1" name="question1" value="question1">Question 1</button>
-                                    </div>
-                                </td>
-                                <td>
-                                    <input type="text" class="form-control input-value2" name="input_value2" value="">
-                                    <br>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary question2" name="question2" value="question2">Question 2</button>
-                                    </div>
-                                </td>
-                                 <td>
-                                    <input type="text" class="form-control input-value3" name="input_value3" value="">
-                                    <br>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary question3" name="question3" value="question3">Question 3</button>
-                                    </div>
-                                </td>
+                        <div class="card">
+                            <div class="card-header">Question #1</div>
+                            <div class="card-body">
+                              <input type="text" class="form-control input-value" name="input_value" value="">
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary question1" name="question1" value="question1">Question 1</button>
+                                </div>
+                            </div>
+                        </div>
 
-                                <td>
-                                    <input type="text" class="form-control input-value4" name="input_value4" value="">
-                                    <br>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary question4" name="question4" value="question4">Question 4</button>
-                                    </div>
-                                </td>
+                        <div class="card">
+                            <div class="card-header">Question #2</div>
+                            <div class="card-body">
+                                <input type="text" class="form-control input-value2" name="input_value2" value="">
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary question2" name="question2" value="question2">Question 2</button>
+                                </div>
+                            </div>
+                        </div>
 
-                            </tr>
-                        </table>
-                        
+
+                        <div class="card">
+                            <div class="card-header">Question #3</div>
+                            <div class="card-body">
+                                <input type="text" class="form-control input-value3" name="input_value3" value="">
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary question3" name="question3" value="question3">Question 3</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header">Question #4</div>
+                            <div class="card-body">
+                                <input type="text" class="form-control input-value4" name="input_value4" value="">
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary question4" name="question4" value="question4">Question 4</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">Question #5</div>
+                            <div class="card-body">
+                                <input type="text" class="form-control input-value5" name="input_value5" value="" style="display: none;">
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary question5" name="question5" value="question5">Question 5</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </form>
             </div>
