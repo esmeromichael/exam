@@ -136,10 +136,11 @@ class ExamController extends Controller
     public function stockBuySell() 
     { 
         $data = [100, 80, 50, 145, 500, 400, 450, 300, 10, 55, 40, 15, 80, 90];
-        $max = 0;
+        $sale = 0;
+        $day  = 3;
         foreach ($data as $key => $value) {
-           $max = max($data);
-           echo 'BUY '.' SELL '.$max;
+           $sale = $value;
+           
         }
         //not yet done, :(
         return; 
